@@ -12,4 +12,11 @@
 #  updated_at :datetime         not null
 #
 class Item < ApplicationRecord
+
+validates :name, length: {in: 1..255}
+
+belongs_to :pokemon
+
+
+
 end
